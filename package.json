@@ -1,0 +1,34 @@
+{
+  "name": "nft-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/70m4w0k/NFT-platform.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/70m4w0k/NFT-platform/issues"
+  },
+  "homepage": "https://github.com/70m4w0k/NFT-platform#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "@truffle/hdwallet-provider": "^2.0.8",
+    "chai": "^4.2.0",
+    "dotenv": "^16.0.1",
+    "eth-gas-reporter": "^0.2.25",
+    "ethers": "^5.6.8",
+    "hardhat": "^2.9.7",
+    "solidity-coverage": "^0.7.21",
+    "web3": "^1.7.3"
+  }
+}
