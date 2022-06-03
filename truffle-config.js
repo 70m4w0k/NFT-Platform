@@ -10,6 +10,37 @@ module.exports = {
       port: 8545,            // Standard Ethereum port (default: none)
       network_id: "*"        // Any network (default: none)
     },
+    mumbai: {
+      provider: function () {
+        return new HDWalletProvider(`${process.env.MNEMONIC}`, `https://polygon-mumbai.infura.io/v3/${process.env.INFURA_ID}`)
+      },
+      network_id: 80001,
+      // from: '0x95E6Fc934505B29b0a13655D0E43de15Ea1afC30'
+    },
+    polygon: {
+      provider: function () {
+        return new HDWalletProvider(`${process.env.MNEMONIC}`, `https://polygon-mainnet.infura.io/v3/${process.env.INFURA_ID}`)
+      },
+      network_id: 137
+    },
+    rinkeby: {
+      provider: function() {
+        return new HDWalletProvider(`${process.env.MNEMONIC}`, `https://rinkeby.infura.io/v3/${process.env.INFURA_ID}`)
+      },
+      network_id: 4
+    },
+    ropsten: {
+      provider: function() {
+        return new HDWalletProvider(`${process.env.MNEMONIC}`, `https://ropsten.infura.io/v3/${process.env.INFURA_ID}`)
+      },
+      network_id: 3
+    },
+    kovan: {
+      provider: function() {
+        return new HDWalletProvider(`${process.env.MNEMONIC}`, `https://kovan.infura.io/v3/${process.env.INFURA_ID}`)
+      },
+      network_id: 42
+    }
   },
   compilers: {
     solc: {
